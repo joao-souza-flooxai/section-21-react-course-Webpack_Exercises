@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack", 
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server", 
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "webpack-dev-server": "3.1.4",
+    "cross-env": "5.1.5",
+    "file-loader": "1.1.11",
+    "optimize-css-assets-webpack-plugin": "4.0.1",
+    "uglifyjs-webpack-plugin": "1.2.5",
     "mini-css-extract-plugin": "0.4.0",
     "sass-loader": "7.0.1",
     "css-loader": "0.28.11",
